@@ -1,0 +1,781 @@
+
+@font-face {
+  font-family: "SAIBA-O";
+  src: url(fonts/Windows/lada-pragmatica-4.ttf);
+}
+@font-face {
+  font-family: "SAIBA-R";
+  src: url(fonts/Windows/lada-pragmatica-3.ttf);
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+footer{
+  display: block;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  color: #000;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div{
+  display: block;
+}
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li{
+  list-style: none;
+}
+/*Шапка*/
+.shapka{
+  width: 100%;
+  margin: 0px auto;
+  height: 96px;
+
+  display: flex;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 96px;
+  margin-left: 5%;
+
+}
+
+.list{
+  display: flex;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  font-size: 20px;
+  font-family: "SAIBA-O";
+  
+    
+}
+.list li{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.list a {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  line-height: 1;
+  transition: 0.3s linear;
+  padding: 20px 10px;
+  
+}
+.list a:hover{
+  background-color: #c7c7c7;
+}
+.logotype{
+  height: 80px;
+  width: auto;
+
+}
+.contacts{
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 345px;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+}
+.contacts img{
+  height: 50px;
+
+}
+.contacts-phone a{
+  font-family: "Mapore-Medium";
+    font-weight: 700;
+    font-size: 28px; 
+    line-height: 20px;
+    position: relative;
+    color: #414141;
+    padding-bottom: 2px;
+}
+.contacts-phone a::before{
+  position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #414141;
+}
+.contacts-phone span{
+  width: 100%;
+    font-family: "Mapore-Medium";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 16px;
+    padding-left: 12px;
+    position: relative;
+}
+.contacts-phone span::before{
+  content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #00b428;
+    left: 0;
+    top: 50%;
+    border-radius: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+/*main section*/
+.main {
+  background-image: url(img/main3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  font-family: "SAIBA-O";
+}
+.section {
+  padding: 50px 0;
+}
+.content {
+  width: 1140px;
+  margin: 0 auto;
+}
+.main::after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000a8;
+  position: absolute;
+}
+.main__wrapper {
+  position: relative;
+  z-index: 1;
+}
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+.main li {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 600;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  list-style: disc;
+  font-family: "SAIBA-R";
+}
+.main ul {
+  margin-bottom: 50px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.main__button {
+  margin-bottom: 30px;
+}
+.button {
+  background: #ed1c24;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  padding: 17px 37px;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  border-radius: 20px;
+  transition: 0.9s;
+  position: relative;
+  overflow: hidden;
+  font-size: 22px;
+}
+a, .more, .button {
+  cursor: pointer;
+
+}
+.button:hover{
+  background: #9b1318;
+
+
+}
+.main__wrapper._obs::after {
+  background-image: url(img/obs.png);
+  width: 550px;
+}
+.main__wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 371px;
+  height: 385px;
+}
+.main h1 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  margin-bottom: 30px;
+  max-width: 587px;
+  text-align: left;
+}
+.section h1 {
+  position: relative;
+  width: 100%;
+
+}
+
+.main h1 span {
+  color: #ed1c24;
+}
+.main h2 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.35;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  max-width: 586px;
+  text-align: left;
+  font-weight: 300;
+  padding: 0 10px;
+  background: #000;
+  display: inline-block;
+}
+
+/*Услуги*/
+.uslugi {
+  height: auto;
+  width: 100%;
+
+  
+}
+.uslugi1 {
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  margin-left: 31%;
+  position: relative;
+}
+.uslugi1 h2{
+  font-family: "SAIBA-O";
+  font-weight: 700;
+    font-size: 28px; 
+    line-height: 20px;
+    position: relative;
+    color: #ffffff;
+    padding-bottom: 2px;
+    margin-top: 25px;
+}
+.uslugi1 h2::before{
+  position: absolute;
+    content: "";
+    width: 125px;
+    height: 5px;
+    bottom: 0px;
+    left:290px;
+    top: 50px;
+    background-color: #ff0000;
+}
+.karts{
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1px;
+  margin-top: 80px;
+  text-decoration: none;
+}
+
+.carta{
+  box-shadow: 0 4px 10px rgba(76, 80, 94, 0.1);
+  border-radius: 13px;
+  background: #ffffffaf;
+  padding: 2px;
+  width: 330px;
+  height: 220px;
+  margin-bottom: 30px;
+
+}
+.services__caption {
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  transition: 0.4s all;
+  font-family: "SAIBA-O";
+}
+
+.carta-img{
+  overflow: hidden;
+    height: 160px;
+    margin-bottom: 1px;
+    text-align: center;
+    cursor: pointer;
+  vertical-align: middle;
+  border: 0;
+  
+}
+
+.carta:hover{
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+  color: red;
+}
+.bg {
+  position: absolute;
+  background-image: url(img/backg.jpg) ;
+  background-repeat: no-repeat;
+  background-size: initial;
+  width: 100%;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-open  {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.fade.in {
+  opacity: 1;
+}
+.modal-content {
+  background: #eaeaea;
+  padding: 30px;
+  border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    position: relative;
+}
+.modal-content {
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.modal-content .h2 {
+  margin-bottom: 60px;
+  font-size: 26px;
+}
+.h2 {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  font-weight: 700;
+  color: #000;
+  font-family: Montserrat, Arial, sans-serif;
+}
+.h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -75px;
+  width: 150px;
+  height: 4px;
+  background-color: #4d5b62;
+}
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+  -o-transition: -o-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  -webkit-transform: translate(0,-25%);
+  -ms-transform: translate(0,-25%);
+  -o-transform: translate(0,-25%);
+  transform: translate(0,-25%);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+}
+button.close {
+  position: absolute;
+  background-image: url(img/kondey/close.png);
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+  opacity: 1;
+}
+button.close {
+
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+
+  cursor: pointer;
+}
+button, select {
+  text-transform: none;
+}
+button {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form__block-half {
+  width: 48%;
+  margin-bottom: 20px;
+}
+label {
+  width: 100%;
+  text-align: left;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+label {
+  cursor: default;
+}
+label span {
+  margin-bottom: 5px;
+  display: inline-block;
+  font-weight: 400;
+  color: #000;
+  font-size: 14px;
+}
+.input {
+  padding-left: 20px;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  color: #34373b;
+  background-color: #c5c5c5;
+  border: 1px solid #000000;
+  font-weight: 400;
+}
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.form__block-wide {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  bottom: -50%;
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .6) 100%);
+  width: 45px;
+  transform: skewX(-22deg);
+  left: -65%;
+  animation-name: blick;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.form__politic {
+  position: relative;
+  margin-bottom: 20px;
+  opacity: 0.5;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+.form__security {
+  margin-top: 20px;
+  text-align: center;
+}
+.form__security i {
+  width: 42px;
+  height: 42px;
+  background-image: url(img/kondey/security.svg);
+  background-size: contain;
+  display: inline-block;
+  vertical-align: top;
+}
+.form__security p {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  padding-left: 10px;
+  text-align: left;
+  color: #2db29a;
+  line-height: 1.2;
+}
+p {
+  margin: 0 0 10px;
+}
+/* Подвал */
+.main_footer1 {
+  padding-top: 450px;
+  color: #000;
+  background: #e6e6e6;
+  font-family: "SAIBA-O";
+}
+.container1 {
+  width: 1170px;
+  padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.row1:before, .container1:before{
+  display: table;
+  content: " ";
+}
+.main_footer1 .footer_content1 {
+  padding-bottom: 34px;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  justify-content: space-between;
+}
+.row1 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-41{
+  float: left;
+}
+.col-md-41, .col-sm-121{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 350px;
+}
+.main_footer1 .footer_logo1 {
+  margin-bottom: 27px;
+}
+.main_footer1 .footer_logo1 img {
+  width: auto;
+  height: auto;
+  max-width: 156px;
+}
+.main_footer1 .footer_description1 {
+  margin-bottom: 33px;
+  font-style: italic;
+  color: #000;
+}
+.header__social1._footer1 ul {
+  margin: 0;
+  padding: 0;
+  width: 149px;
+}
+.header__social1 ul {
+  display: block;
+}
+
+.main_footer1 .footer_block1 .title {
+  position: relative;
+  margin: 0 0 52px;
+  text-transform: uppercase;
+  font-family: "SAIBA-O";
+  font-weight: 700;
+  font-size: 22px;
+}
+.main_footer1 .footer_block1 .title1::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 68px;
+  height: 2px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.footer_menu_list1 {
+  padding: 0;
+}
+.main_footer1 .footer_menu_list1 li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  line-height: 25px;
+}
+.main_footer1 .footer_menu_list1 a {
+  position: relative;
+  color: #000;
+  transition: color .1s linear 0s;
+  font-family: "SAIBA-R";
+}
+.main_footer1 .footer_menu_list1 a::before {
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  content: '\f26b';
+  font-family: "SAIBA-R";
+  color: #000;
+  transition: color .1s linear 0s;
+}
+.main_footer1 .footer_block1 .title1 {
+  position: relative;
+  margin: 0 0 52px;
+  text-transform: uppercase;
+  font-family: "SAIBA-O";
+  font-weight: 700;
+  font-size: 22px;
+}
+.main_footer1 .footer_block1 .title1::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 68px;
+  height: 2px;
+}
+.footer_contacts1 {
+  padding: 0;
+}
+.main_footer1 .footer_contacts1 li {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+.main_footer1 .footer_contacts1 li.phone1::before {
+  content: '\f2b6';
+}
+.main_footer1 .footer_contacts1 li::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 16px;
+  height: 18px;
+  font-family: "SAIBA-O";
+  text-align: center;
+}
+.main_footer1 .footer_contacts1 a {
+  color: #000;
+}
+.main_footer1 .footer_contacts1 li {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+.main_footer1 .footer_contacts1 li.address1::before {
+  content: '\f1ab';
+}
+.row1:after{
+  clear: both;
+  display: table;
+    content: " ";
+}
+.main_footer1 .footer_meta1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.main_footer1 .footer_meta1 .copy1 {
+  padding: 7px 0 3px;
+}
+.container1:after{
+  clear: both;
+  display: table;
+    content: " ";
+}
