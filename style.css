@@ -1,0 +1,740 @@
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url(main/fonts/Windows/Manrope-Medium.ttf);
+}
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url(main/fonts/Windows/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: "Prata-Regular";
+  src: url(main/fonts/Windows/Prata-Regular.ttf);
+}
+@font-face {
+  font-family: "SAIBA-O";
+  src: url(main/fonts/Windows/lada-pragmatica-4.ttf);
+}
+@font-face {
+  font-family: "SAIBA-R";
+  src: url(main/fonts/Windows/lada-pragmatica-3.ttf)
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  color: #000;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div{
+  display: block;
+}
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li{
+  list-style: none;
+  display: list-item;
+    text-align: -webkit-match-parent;
+}
+footer{
+  display: block;
+}
+
+/*Шапка*/
+.shapka{
+  width: 100%;
+  margin: 0px auto;
+  height: 96px;
+
+  display: flex;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 96px;
+  margin-left: 5%;
+
+}
+
+.list{
+  display: flex;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  font-size: 20px;
+  font-family: "SAIBA-o";
+  
+    
+}
+.list li{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.list a {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  line-height: 1;
+  transition: 0.3s linear;
+  padding: 20px 10px;
+  
+}
+.list a:hover{
+  background-color: #c7c7c7;
+}
+.logotype{
+  height: 80px;
+  width: auto;
+
+}
+.contacts{
+    display: flex;
+    max-width: 345px;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+}
+.contacts img{
+  height: 50px;
+
+}
+.contacts-phone a{
+  font-family: "Mapore-Medium";
+    font-weight: 700;
+    font-size: 28px; 
+    line-height: 20px;
+    position: relative;
+    color: #414141;
+    padding-bottom: 2px;
+}
+.contacts-phone a::before{
+  position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #414141;
+}
+.contacts-phone span{
+  width: 100%;
+    font-family: "Mapore-Medium";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 16px;
+    padding-left: 12px;
+    position: relative;
+}
+.contacts-phone span::before{
+  content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #00b428;
+    left: 0;
+    top: 50%;
+    border-radius: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+
+/*main section*/
+.main {
+  background-image: url(main/img/main3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  font-family: "SAIBA-o";
+}
+.section {
+  padding: 50px 0;
+}
+.content {
+  width: 1140px;
+  margin: 0 auto;
+
+}
+.main::after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000a8;
+  position: absolute;
+}
+.main__wrapper {
+  position: relative;
+  z-index: 1;
+
+}
+.main__wrapper h1{
+  font-family: "SAIBA-o";
+}
+
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+.main li {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 600;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  list-style: disc;
+  font-family: "SAIBA-R";
+}
+.main ul {
+  margin-bottom: 50px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.main__button {
+  margin-bottom: 30px;
+}
+.button {
+  background: #ed1c24;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  padding: 17px 37px;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  border-radius: 20px;
+  transition: 0.9s;
+  position: relative;
+  overflow: hidden;
+  font-size: 22px;
+}
+a, .more, .button {
+  cursor: pointer;
+
+}
+.button:hover{
+  background: #9b1318;
+}
+.main__wrapper._obs::after {
+  background-image: url(main/img/obs.png);
+  width: 550px;
+}
+.main__wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 371px;
+  height: 385px;
+}
+.main h1 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  margin-bottom: 30px;
+  max-width: 587px;
+  text-align: left;
+}
+.section h1 {
+  position: relative;
+  width: 100%;
+
+
+}
+
+.main h1 span {
+  color: #ed1c24;
+
+}
+.main h2 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.35;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  max-width: 586px;
+  text-align: left;
+  font-weight: 300;
+  padding: 0 10px;
+  background: #000;
+  display: inline-block;
+
+}
+
+
+/*Услуги*/
+.uslugi {
+  height: auto;
+  width: 100%;
+
+  
+}
+.uslugi1 {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin-left: 47%;
+  position: relative;
+}
+.uslugi1 h2{
+  font-family: "SAIBA-O";
+  font-weight: 700;
+    font-size: 30px; 
+    line-height: 20px;
+    position: relative;
+    color: #ffffff;
+    padding-bottom: 2px;
+}
+.uslugi1 h2::before{
+  position: absolute;
+    content: "";
+    width: 125px;
+    height: 5px;
+    bottom: 0px;
+    left: 2px;
+    top: 50px;
+    background-color: #ff0000;
+}
+.karts{
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1px;
+  margin-top: 80px;
+  text-decoration: none;
+  height: 650px;
+}
+
+.carta{
+  box-shadow: 0 4px 10px rgba(76, 80, 94, 0.1);
+  border-radius: 13px;
+  background: #ffffffc0;
+  padding: 2px;
+  width: 250px;
+  height: 220px;
+  margin-bottom: 30px;
+
+}
+.services__caption {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  transition: 0.4s all;
+  font-family: "SAIBA-O";
+}
+
+.carta-img{
+  overflow: hidden;
+    height: 160px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+  vertical-align: middle;
+  border: 0;
+  
+}
+
+.carta:hover{
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+  color: red;
+}
+.bg {
+  position: absolute;
+  background-image: url(main/img/backg.jpg) ;
+  background-repeat: no-repeat;
+  background-size: initial;
+  width: 100%;
+}
+.bg1 {
+  position: absolute;
+  background-image: url(main/img/backg.jpg) ;
+  background-repeat: no-repeat;
+  background-size: initial;
+  width: 100%;
+}
+/*Галерея*/
+.photo {
+  width: 100%;
+  margin-top: 130px;
+  position: relative;
+}
+.bg1 img{
+  filter: brightness(40%);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+  margin-top: -49px;
+}
+.section {
+  padding: 50px 0;
+}
+.photo__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.photo__block._fixed {
+  height: 270px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  background-size: cover;
+}
+.photo__block {
+  width: 270px;
+  margin-right: 1.33%;
+  display: block;
+  margin-bottom: 30px;
+  border-radius: 13px;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.6);
+}
+.h2 {
+  font-size: 32px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 100px;
+  color: #ffffff;
+  font-family: "SAIBA-O";
+  margin-left: 10px;
+}
+.h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -75px;
+  width: 150px;
+  height: 4px;
+  background-color: #ff0000;
+}
+.content1 {
+  width: 1300px;
+  margin: 0 auto;
+
+}
+/* О компании */
+.komp {
+  width: 100%;
+
+  position: relative;
+}
+.bg2 img{
+  filter: brightness(10%);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+  margin-top: -49px;
+}
+.section {
+  padding: 50px 0;
+}
+.komp1 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  height: 600px;
+  margin-top: -50px;
+}
+.txt1 {
+  font-size: 22px;
+  text-align: center;
+  position: relative;
+  width: 90%;
+  color: #ffffff;
+  font-family: "SAIBA-O";
+  margin-left: 10px;
+}
+
+.h3 {
+  font-size: 32px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 100px;
+  color: #ffffff;
+  font-family: "SAIBA-O";
+  margin-left: 10px;
+}
+.h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -75px;
+  width: 150px;
+  height: 4px;
+  background-color: #ff0000;
+}
+.content2 {
+  width: 1000px;
+  margin: 0 auto;
+
+}
+
+/* Подвал */
+.main_footer {
+  padding-top: 90px;
+  color: #000;
+  background: #e6e6e6;
+  font-family: "SAIBA-O";
+}
+.container {
+  width: 1170px;
+  padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.row:before, .container:before{
+  display: table;
+  content: " ";
+}
+.main_footer .footer_content {
+  padding-bottom: 34px;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  justify-content: space-between;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4{
+  float: left;
+}
+.col-md-4, .col-sm-12{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 350px;
+}
+.main_footer .footer_logo {
+  margin-bottom: 27px;
+}
+.main_footer .footer_logo img {
+  width: auto;
+  height: auto;
+  max-width: 156px;
+}
+.main_footer .footer_description {
+  margin-bottom: 33px;
+  font-style: italic;
+  color: #000;
+}
+.header__social._footer ul {
+  margin: 0;
+  padding: 0;
+  width: 149px;
+}
+.header__social ul {
+  display: block;
+}
+
+.main_footer .footer_block .title {
+  position: relative;
+  margin: 0 0 52px;
+  text-transform: uppercase;
+  font-family: "SAIBA-O";
+  font-weight: 700;
+  font-size: 22px;
+}
+.main_footer .footer_block .title::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 68px;
+  height: 2px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.footer_menu_list {
+  padding: 0;
+}
+.main_footer .footer_menu_list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  line-height: 25px;
+}
+.main_footer .footer_menu_list a {
+  position: relative;
+  color: #000;
+  transition: color .1s linear 0s;
+  font-family: "SAIBA-R";
+}
+.main_footer .footer_menu_list a::before {
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  content: '\f26b';
+  font-family: "SAIBA-R";
+  color: #000;
+  transition: color .1s linear 0s;
+}
+.main_footer .footer_block .title {
+  position: relative;
+  margin: 0 0 52px;
+  text-transform: uppercase;
+  font-family: "SAIBA-O";
+  font-weight: 700;
+  font-size: 22px;
+}
+.main_footer .footer_block .title::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 68px;
+  height: 2px;
+}
+.footer_contacts {
+  padding: 0;
+}
+.main_footer .footer_contacts li {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+.main_footer .footer_contacts li.phone::before {
+  content: '\f2b6';
+}
+.main_footer .footer_contacts li::before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 16px;
+  height: 18px;
+  font-family: "SAIBA-O";
+  text-align: center;
+}
+.main_footer .footer_contacts a {
+  color: #000;
+}
+.main_footer .footer_contacts li {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+.main_footer .footer_contacts li.address::before {
+  content: '\f1ab';
+}
+.row:after{
+  clear: both;
+  display: table;
+    content: " ";
+}
+.main_footer .footer_meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.main_footer .footer_meta .copy {
+  padding: 7px 0 3px;
+}
+.container:after{
+  clear: both;
+  display: table;
+    content: " ";
+}
+
+
+
+
+
+
+
+
+
+
+
