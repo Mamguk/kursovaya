@@ -47,15 +47,15 @@ try {
 
 	// Настройки почты отправителя
 	$mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-	$mail->Username   = 'avtoservis.mamguk@yandex.ru'; // Логин на почте
-	$mail->Password   = 'droavygyglopiaop'; // Пароль на почте
+	$mail->Username   = ' '; // Логин на почте
+	$mail->Password   = ' '; // Пароль на почте
 	$mail->SMTPSecure = 'ssl';
 	$mail->Port       = 465;
 
-	$mail->setFrom('avtoservis.mamguk@yandex.ru', $title); // Адрес самой почты и имя отправителя
+	$mail->setFrom(' ', $title); // Адрес самой почты и имя отправителя
 
 	// Получатель письма
-	$mail->addAddress('avtoservis.mamguk@yandex.ru');
+	$mail->addAddress(' ');
 
 	// Отправка сообщения
 	$mail->isHTML(true);
